@@ -1,7 +1,0 @@
-{
-	"processes": [
-		"ls -al",
-		"whoami"
-	],
-	"terminal": true
-}
