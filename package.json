@@ -1,0 +1,26 @@
+{
+  "name": "multidash",
+  "version": "0.0.1",
+  "description": "A tool to allow you to run multiple logging utilities (like webpack watch & karma testing) in the same terminal window, and put your config so it's cross developer friendly.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Jackson Marketon",
+    "email": "jmarketon@gmail.com",
+    "url": "http://github.com/jackmarketon"
+  },
+  "license": "ISC",
+  "keywords": [
+    "dashboard",
+    "curses"
+  ],
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "commander": "^2.9.0"
+  },
+  "engines": {
+    "node": "^5.4.0"
+  }
+}
