@@ -5,10 +5,12 @@
     "ecmaVersion": 6,
     "ecmaFeatures": {
       "globalReturn": true,
-      "impliedStrict": true,
-      "jsx": false
+      "impliedStrict": false,
+      "jsx": false,
+      "modules": true,
+      "generators": true
     },
-    "sourceType": "module",
+    "sourceType": "modules",
   },
   "env": {
     "es6": true,
@@ -50,6 +52,9 @@
     "no-confusing-arrow": ["error", {"allowParens": true}], // See eslint config for reasons
     "no-constant-condition": ["error"],
     "arrow-parens": ["error", "always"],
-    "operator-linebreak": ["error", "after"]
+    "operator-linebreak": ["error", "after"],
+    "require-yield": "error",
+    "generator-star-spacing": ["error", {"after": true, "before": false}],
+    "strict": ["error", "global"]
   }
 }

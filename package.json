@@ -2,9 +2,11 @@
   "name": "multidash",
   "version": "0.0.1",
   "description": "A tool to allow you to run multiple logging utilities (like webpack watch & karma testing) in the same terminal window, and put your config so it's cross developer friendly.",
-  "main": "index.js",
+  "main": "bin/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "DEBUG=* ./bin/index.js -p \"ls -al\" -p \"pwd\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/eslint/bin/eslint.js -c .eslintrc lib/** bin/**"
   },
   "author": {
     "name": "Jackson Marketon",
@@ -18,7 +20,8 @@
   ],
   "dependencies": {
     "blessed": "^0.1.81",
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "debug": "^2.2.0"
   },
   "engines": {
     "node": "^5.4.0"
