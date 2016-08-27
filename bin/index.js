@@ -6,6 +6,7 @@ const program = require('commander');
 const pjson = require('./../package.json');
 const debug = require('debug')('bin');
 const configParser = require('./../lib/configParser');
+const blessedEngine = require('./../lib/blessedEngine');
 
 let config = {};
 
@@ -54,4 +55,4 @@ config = program.opts();
 //   config = Object.assign(parsed, config);
 // }
 
-// Run blessed
+blessedEngine(config);
